@@ -26,6 +26,12 @@ export default defineManifest({
       matches: [],
     },
   ],
-  permissions: ['declarativeNetRequest', 'declarativeNetRequestFeedback', 'storage'],
+  permissions: [
+    'cookies',
+    'declarativeNetRequest',
+    'declarativeNetRequestFeedback',
+    'storage',
+    'webRequest',
+  ],
   host_permissions: ['<all_urls>'],
 })

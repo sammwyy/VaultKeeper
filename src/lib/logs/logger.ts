@@ -1,11 +1,15 @@
-export default class {
+export default class Logger {
   private readonly context: string
 
   constructor(context: string) {
     this.context = context
   }
 
-  info(message: any) {
+  public info(message: any) {
     console.log(`(VK-${this.context}) [INFO]`, message)
+  }
+
+  public warn(message: any) {
+    console.warn(`(VK-${this.context}) [WARN]`, message)
   }
 }
